@@ -1,0 +1,24 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet id="initial-tag" author="magyariotto">
+        <tagDatabase tag="initial-tag"/>
+    </changeSet>
+
+    <changeSet id="create_table_users" author="magyariotto">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="users" schemaName="public"/>
+            </not>
+        </preConditions>
+        <createTable tableName="users" schemaName="public">
+            <column name="user_id" type="UUID"/>
+            <column name="first_name" type="text"/>
+            <column name="last_name" type="text"/>
+            <column name="password" type="text"/>
+            <column name="email" type="text"/>
+        </createTable>
+        <addPrimaryKey tableName="users" columnNames="user_id" schemaName="public"/>
+    </changeSet>
+</databaseChangeLog>
