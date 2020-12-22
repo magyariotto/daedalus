@@ -10,7 +10,7 @@ public class ThymeleafConfig {
     @Bean
     public ClassLoaderTemplateResolver classLoaderTemplateResolver() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
-        templateResolver.setPrefix("html/");
+        templateResolver.setPrefix("public/html/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");
