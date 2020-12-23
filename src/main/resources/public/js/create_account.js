@@ -3,7 +3,6 @@ function create_account_page(){
 
     window.loadCreateAccountPage = new function(){
         $(document).ready(function(){
-
             const mainDiv = document.createElement("div");
             const fieldSet = document.createElement("fieldset");
             const legend = document.createElement("legend");

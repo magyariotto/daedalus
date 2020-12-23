@@ -4,7 +4,7 @@ import com.github.daedalus.controller.request.CreateAccountRequest;
 import com.github.daedalus.database.Users;
 import com.github.daedalus.database.UsersRepository;
 import com.github.daedalus.errorHandler.ErrorHandlerException;
-import com.github.daedalus.validation.CreateAccountValidation;
+import com.github.daedalus.validation.CreateAccountRequestValidation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -20,13 +20,13 @@ import static java.util.Objects.isNull;
 @Slf4j
 @RequiredArgsConstructor
 public class CreateAccountController {
-    private final CreateAccountValidation createAccountValidation;
+    private final CreateAccountRequestValidation createAccountValidation;
     private final UsersRepository usersRepository;
 
     @PostMapping("/create_account")
-    public void createAccount(@RequestBody CreateAccountRequest createAccountRequest){
+    public void createAccount(@RequestBody CreateAccountRequest createAccountRequest) {
         boolean createdAccountValidation = createAccountValidation.createAccountValidation(createAccountRequest);
-        if(!createdAccountValidation){
+        if (!createdAccountValidation) {
             log.error("Invalid create account parameters.");
             throw new IllegalArgumentException("Invalid create account parameters.");
         }
@@ -34,11 +34,11 @@ public class CreateAccountController {
         Users searchUserByEmail = usersRepository.findByEmail(createAccountRequest.getEmail());
         Users searchUserByUserName = usersRepository.findByUserName(createAccountRequest.getUserName());
 
-        if(!isNull(searchUserByUserName)){
+        if (!isNull(searchUserByUserName)) {
             throw new ErrorHandlerException("The username is busy.", HttpStatus.ALREADY_REPORTED, "A felhasznalonev foglalt");
         }
 
-        if(!isNull(searchUserByEmail)){
+        if (!isNull(searchUserByEmail)) {
             throw new ErrorHandlerException("The e-mail adress is busy", HttpStatus.ALREADY_REPORTED, "Az email cim foglalt");
         }
 
