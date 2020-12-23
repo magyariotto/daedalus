@@ -1,10 +1,10 @@
 {
   "create_account_divs": [
     {
-      "name":"username",
+      "name":"userName",
       "label":"Username: ",
       "type":"text",
-      "id":"username",
+      "id":"userName",
       "placeholder":"Username"
     },
     {

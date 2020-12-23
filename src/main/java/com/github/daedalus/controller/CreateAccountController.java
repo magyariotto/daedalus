@@ -7,15 +7,12 @@ import com.github.daedalus.errorHandler.ErrorHandlerException;
 import com.github.daedalus.validation.CreateAccountValidation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
-import java.util.regex.Pattern;
 
 import static java.util.Objects.isNull;
 
@@ -30,24 +27,24 @@ public class CreateAccountController {
     public void createAccount(@RequestBody CreateAccountRequest createAccountRequest){
         boolean createdAccountValidation = createAccountValidation.createAccountValidation(createAccountRequest);
         if(!createdAccountValidation){
-            log.error("Nem megfelelo adatok.");
-            throw new IllegalArgumentException("Nem megfelelo adatok.");
+            log.error("Invalid create account parameters.");
+            throw new IllegalArgumentException("Invalid create account parameters.");
         }
 
         Users searchUserByEmail = usersRepository.findByEmail(createAccountRequest.getEmail());
-        Users searchUserByUsername = usersRepository.findByUsername(createAccountRequest.getUsername());
+        Users searchUserByUserName = usersRepository.findByUserName(createAccountRequest.getUserName());
 
-        if(isNull(searchUserByEmail)){
-            throw new ErrorHandlerException("Az email cim foglalt", HttpStatus.ALREADY_REPORTED, "Az email cim foglalt");
+        if(!isNull(searchUserByUserName)){
+            throw new ErrorHandlerException("The username is busy.", HttpStatus.ALREADY_REPORTED, "A felhasznalonev foglalt");
         }
 
-        if(isNull(searchUserByUsername)){
-            throw new ErrorHandlerException("A felhasznalonev foglalt", HttpStatus.ALREADY_REPORTED, "A felhasznalonev foglalt");
+        if(!isNull(searchUserByEmail)){
+            throw new ErrorHandlerException("The e-mail adress is busy", HttpStatus.ALREADY_REPORTED, "Az email cim foglalt");
         }
 
         Users users = new Users();
         users.setUserId(UUID.randomUUID());
-        users.setUsername(createAccountRequest.getUsername());
+        users.setUserName(createAccountRequest.getUserName());
         users.setFirstName(createAccountRequest.getFirstName());
         users.setLastName(createAccountRequest.getLastName());
         users.setPassword(createAccountRequest.getPassword());

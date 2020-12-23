@@ -24,7 +24,6 @@ public class CreateAccountValidation {
         if(!EMAIL_PATTERN.matcher(createAccountRequest.getEmail()).matches()){
             return false;
         }
-        // TODO e-mail exists
 
         // firstName Validation:
         if(isBlank(createAccountRequest.getFirstName())){
@@ -37,7 +36,9 @@ public class CreateAccountValidation {
         }
 
         // username Validation:
-        //TODO username Validation
+        if(createAccountRequest.getUserName().length() < 6 || createAccountRequest.getUserName().length() > 20){
+            return false;
+        }
 
         // password Validation:
         if(isNull(createAccountRequest.getPassword())){

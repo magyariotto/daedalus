@@ -14,6 +14,7 @@
         </preConditions>
         <createTable tableName="users" schemaName="public">
             <column name="user_id" type="UUID"/>
+            <column name="user_name" type="text"/>
             <column name="first_name" type="text"/>
             <column name="last_name" type="text"/>
             <column name="password" type="text"/>
