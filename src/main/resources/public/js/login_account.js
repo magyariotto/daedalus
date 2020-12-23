@@ -79,7 +79,7 @@ function login(){
             if(errorResponse.errorMessage){
                 alert(errorResponse.errorMessage);
             }else{
-                alert("Unkonow error: " + responseStatus + " - " + responseText);
+                alert("Unknown error: " + responseStatus + " - " + responseText);
             }
         }
 
