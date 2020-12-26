@@ -4,42 +4,42 @@
       "name":"userName",
       "label":"Username: ",
       "type":"text",
-      "id":"userName",
+      "id":"createAccountUserName",
       "placeholder":"Username"
     },
     {
       "name":"password",
       "label":"Password: ",
       "type":"password",
-      "id":"password",
+      "id":"createAccountPassword",
       "placeholder":"Password"
     },
     {
       "name":"password2",
       "label":"Confirm Password: ",
       "type":"password",
-      "id":"password2",
+      "id":"createAccountPassword2",
       "placeholder":"Password"
     },
     {
       "name":"email",
       "label":"E-mail Adress:",
       "type":"email",
-      "id":"email",
+      "id":"createAccountEmail",
       "placeholder":"E-mail Adress"
     },
     {
       "name":"firstName",
       "label":"First Name: ",
       "type":"text",
-      "id":"firstName",
+      "id":"createAccountFirstName",
       "placeholder":"First Name"
     },
     {
       "name":"lastName",
       "label":"Last Name: ",
       "type":"text",
-      "id":"lastName",
+      "id":"createAccountLastName",
       "placeholder":"Last Name"
     }
   ]

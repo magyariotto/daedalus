@@ -1,0 +1,147 @@
+{
+  "homePageDivs": [
+    {
+      "name": "mainDiv",
+      "id": "mainDiv",
+      "num": 1
+    },
+    {
+      "name": "headerDiv",
+      "id": "headerDiv",
+      "num": 2
+    },
+    {
+      "name": "headerTopDiv",
+      "id": "headerTopDiv",
+      "num": 3
+    },
+    {
+      "name": "headerBottomDiv",
+      "id": "headerBottomDiv",
+      "num": 4
+    },
+    {
+      "name": "headerBottomLeftDiv",
+      "id": "headerBottomLeftDiv",
+      "num": 5
+    },
+    {
+      "name": "headerBottomMiddleDiv",
+      "id": "headerBottomMiddleDiv",
+      "num": 6
+    },
+    {
+      "name": "headerBottomRightDiv",
+      "id": "headerBottomRightDiv",
+      "num": 7
+    },
+    {
+      "name": "bodyDiv",
+      "id": "bodyDiv",
+      "num": 8
+    },
+    {
+      "name": "bodyLeftDiv",
+      "id": "bodyLeftDiv",
+      "num": 9
+    },
+    {
+      "name": "bodyMiddleDiv",
+      "id": "bodyMiddleDiv",
+      "num": 10
+    },
+    {
+      "name": "bodyMiddleTopDiv",
+      "id": "bodyMiddleTopDiv",
+      "num": 11
+    },
+    {
+      "name": "bodyMiddleBottomDiv",
+      "id": "bodyMiddleBottomDiv",
+      "num": 12
+    },
+    {
+      "name": "bodyRightDiv",
+      "id": "bodyRightDiv",
+      "num": 13
+    }
+  ],
+  "divsPlacement": [
+    {
+      "name": "mainDiv",
+      "divNumber": 0,
+      "parent": ""
+    },
+    {
+      "name": "section",
+      "divNumber": 2,
+      "parent": "mainDiv",
+      "child": [
+        {
+          "num": 2
+        },
+        {
+          "num": 8
+        }
+      ]
+    },
+    {
+      "name": "headerSection",
+      "divNumber": 2,
+      "parent": "headerDiv",
+      "child": [
+        {
+          "num": 3
+        },
+        {
+          "num": 4
+        }
+      ]
+    },
+    {
+      "name": "bodySection",
+      "divNumber": 3,
+      "parent": "bodyDiv",
+      "child": [
+        {
+          "num": 9
+        },
+        {
+          "num": 10
+        },
+        {
+          "num": 13
+        }
+      ]
+    },
+    {
+      "name": "headerBottomColumn",
+      "divNumber": 3,
+      "parent": "headerBottomDiv",
+      "child": [
+        {
+          "num": 5
+        },
+        {
+          "num": 6
+        },
+        {
+          "num": 7
+        }
+      ]
+    },
+    {
+      "name": "bodyMiddleColumn",
+      "divNumber": 2,
+      "parent": "bodyMiddleDiv",
+      "child": [
+        {
+          "num": 11
+        },
+        {
+          "num": 12
+        }
+      ]
+    }
+  ]
+}

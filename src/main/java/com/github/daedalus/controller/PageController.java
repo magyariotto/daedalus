@@ -54,4 +54,9 @@ public class PageController {
     public String createAccount() {
         return "create_account";
     }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
 }

@@ -1,4 +1,4 @@
-function create_account_page(){
+function createAccountPage(){
     connect_JSON();
 
     window.loadCreateAccountPage = new function(){
@@ -24,7 +24,7 @@ function create_account_page(){
 
             const buttonDiv = document.createElement("div");
             const buttonElement = document.createElement("button");
-            buttonElement.setAttribute("onclick","create_account()");
+            buttonElement.setAttribute("onclick","createAccount()");
             buttonElement.setAttribute("id","create_account");
             buttonElement.innerHTML = "Registration";
             buttonDiv.appendChild(buttonElement);
@@ -33,51 +33,51 @@ function create_account_page(){
             mainDiv.appendChild(fieldSet);
             mainDiv.appendChild(buttonDiv);
 
-            document.getElementById("create_account_html").appendChild(mainDiv);
+            document.getElementById("createAccountPage").appendChild(mainDiv);
         })
     }
 }
 
-function create_account(){
-    const userName = document.getElementById("userName").value;
-    const password = document.getElementById("password").value;
-    const password2 = document.getElementById("password2").value;
-    const email = document.getElementById("email").value;
-    const firstName = document.getElementById("firstName").value;
-    const lastName = document.getElementById("lastName").value;
+function createAccount(){
+    const createAccountUserName = document.getElementById("createAccountUserName").value;
+    const createAccountPassword = document.getElementById("createAccountPassword").value;
+    const createAccountPassword2 = document.getElementById("createAccountPassword2").value;
+    const createAccountEmail = document.getElementById("createAccountEmail").value;
+    const createAccountFirstName = document.getElementById("createAccountFirstName").value;
+    const createAccountLastName = document.getElementById("createAccountLastName").value;
 
-    if(!userName){
+    if(!createAccountUserName){
         alert("Username missing.");
         return;
     }
 
-    if(userName.length < 6 || userName.length > 32){
+    if(createAccountUserName.length < 6 || createAccountUserName.length > 32){
         alert("Username length is invalid");
         return;
     }
 
 
-    if(password.length < 6 || password.length > 20){
+    if(createAccountPassword.length < 6 || createAccountPassword.length > 20){
         alert("Password length is invalid.");
         return
     }
 
-    if(password != password2){
+    if(createAccountPassword != createAccountPassword2){
         alert("Invalid confirm password.");
         return;
     }
 
-    if(!isEmailValid(email)){
+    if(!isEmailValid(createAccountEmail)){
         alert("Email is invalid");
         return;
     }
 
     const data = {
-            userName: userName,
-            password: password,
-            email: email,
-            firstName: firstName,
-            lastName: lastName
+            userName: createAccountUserName,
+            password: createAccountPassword,
+            email: createAccountEmail,
+            firstName: createAccountFirstName,
+            lastName: createAccountLastName
             }
 
     const request = new XMLHttpRequest();

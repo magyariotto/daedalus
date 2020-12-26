@@ -1,4 +1,4 @@
-function login_page(){
+function loginAccountPage(){
     window.loadLoginPage = new function(){
         $(document).ready(function(){
             const mainDiv = document.createElement("div");
@@ -12,7 +12,7 @@ function login_page(){
             userNameOrEmailLabel.innerHTML = "Username or E-mail";
             const userNameOrEmailInput = document.createElement("input");
             userNameOrEmailInput.setAttribute("type", "text");
-            userNameOrEmailInput.setAttribute("id", "userName");
+            userNameOrEmailInput.setAttribute("id", "loginAccountUserName");
             userNameOrEmailInput.setAttribute("placeholder", "Username or E-mail");
             userNameOrEmailLabel.appendChild(userNameOrEmailInput);
             userNameOrEmailDiv.appendChild(userNameOrEmailLabel);
@@ -23,7 +23,7 @@ function login_page(){
             passwordLabel.innerHTML = "Password";
             const passwordInput = document.createElement("input");
             passwordInput.setAttribute("type", "password");
-            passwordInput.setAttribute("id", "password")
+            passwordInput.setAttribute("id", "loginAccountPassword")
             passwordInput.setAttribute("placeholder", "Password");
             passwordLabel.appendChild(passwordInput);
             passwordDiv.appendChild(passwordLabel);
@@ -34,7 +34,7 @@ function login_page(){
             rememberLabel.innerHTML = "Remember me.";
             const rememberInput = document.createElement("input");
             rememberInput.setAttribute("type", "checkbox");
-            rememberInput.setAttribute("id", "remember");
+            rememberInput.setAttribute("id", "loginAccountRemember");
             rememberLabel.appendChild(rememberInput);
             rememberDiv.appendChild(rememberLabel);
 
@@ -49,20 +49,20 @@ function login_page(){
             mainDiv.appendChild(rememberDiv);
             mainDiv.appendChild(buttonDiv);
 
-            document.getElementById("login_html").appendChild(mainDiv);
+            document.getElementById("loginAccountPage").appendChild(mainDiv);
         })
     }
 }
 
 function login(){
-    const userNameOrEmail = document.getElementById("userName").value;
-    const password = document.getElementById("password").value;
-    const remember = document.getElementById("remember").checked;
+    const loginAccountUserNameOrEmail = document.getElementById("loginAccountUserName").value;
+    const loginAccountPassword = document.getElementById("loginAccountPassword").value;
+    const loginAccountRemember = document.getElementById("loginAccountRemember").checked;
 
     const data = {
-        userNameOrEmail: userNameOrEmail,
-        password: password,
-        remember: remember
+        userNameOrEmail: loginAccountUserNameOrEmail,
+        password: loginAccountPassword,
+        remember: loginAccountRemember
     }
 
     const request = new XMLHttpRequest();
@@ -73,7 +73,7 @@ function login(){
         const responseText = request.responseText;
 
         if(responseStatus == 200){
-            window.location.href = "/index";
+            window.location.href = "/home";
         }else{
             const errorResponse = parseResponse(responseText);
             if(errorResponse.errorMessage){
