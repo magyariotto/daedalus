@@ -35,11 +35,11 @@ public class CreateAccountController {
         Users searchUserByUserName = usersRepository.findByUserName(createAccountRequest.getUserName());
 
         if (!isNull(searchUserByUserName)) {
-            throw new ErrorHandlerException("The username is busy.", HttpStatus.ALREADY_REPORTED, "A felhasznalonev foglalt");
+            throw new ErrorHandlerException("The username already exists", HttpStatus.ALREADY_REPORTED, "A felhasznalonev foglalt");
         }
 
         if (!isNull(searchUserByEmail)) {
-            throw new ErrorHandlerException("The e-mail adress is busy", HttpStatus.ALREADY_REPORTED, "Az email cim foglalt");
+            throw new ErrorHandlerException("The e-mail adress already exists", HttpStatus.ALREADY_REPORTED, "Az email cim foglalt");
         }
 
         Users users = new Users();

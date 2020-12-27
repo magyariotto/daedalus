@@ -8,8 +8,6 @@ function loadBodyPage(){
             for(num1=0; num1<divs.homePageDivs.length; num1++){
                 div[divs.homePageDivs[num1].name] = document.createElement("div");
                 div[divs.homePageDivs[num1].name].setAttribute("id", divs.homePageDivs[num1].id);
-                div[divs.homePageDivs[num1].name].innerHTML = divs.homePageDivs[num1].id;
-                console.log(div[divs.homePageDivs[num1].name]);
             }
 
             let num2;

@@ -1,0 +1,231 @@
+#homePage{
+    border-width:           2px;
+    border-style:           outset;
+    border-color:           rgb(38, 38, 38);
+    border-radius:          10px 10px 10px 10px;
+    background-color:       transparent;
+    width:                  98%;
+    min-width:              1270px;
+    height:                 98%;
+    min-height:             700px;
+    color:                  black;
+    text-align:             center;
+    margin:                 0px auto;
+}
+
+    #mainDiv{
+        border-width:           2px;
+        border-style:           outset;
+        border-color:           rgb(38, 38, 38);
+        border-radius:          10px 10px 10px 10px;
+        background-color:       transparent;
+        width:                  1210px;
+        height:                 680px;
+        color:                  black;
+        text-align:             center;
+        margin:                 10px auto;
+    }
+
+    #headerDiv{
+        border-width:           2px;
+        border-style:           inset;
+        border-color:           rgb(38, 38, 38);
+        border-radius:          10px 10px 10px 10px;
+        background-color:       transparent;
+        width:                  1200px;
+        height:                 110px;
+        color:                  black;
+        text-align:             center;
+        margin:                 0px auto;
+    }
+
+        #headerTopDiv{
+            border-width:           2px;
+            border-style:           inset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            background-color:       transparent;
+            width:                  1190px;
+            height:                 20px;
+            color:                  black;
+            text-align:             center;
+            margin:                 0px auto;
+        }
+
+        #headerBottomDiv{
+            border-width:           2px;
+            border-style:           inset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            background-color:       transparent;
+            width:                  1190px;
+            height:                 80px;
+            color:                  black;
+            text-align:             center;
+            margin:                 0px auto;
+        }
+
+            #headerBottomLeftDiv{
+                display:                table-cell;
+                border-width:           2px;
+                border-style:           inset;
+                border-color:           rgb(38, 38, 38);
+                border-radius:          10px 10px 10px 10px;
+                background-color:       transparent;
+                width:                  185px;
+                height:                 75px;
+                color:                  black;
+                text-align:             center;
+                margin:                 3px auto;
+            }
+
+            #headerBottomMiddleDiv{
+                display:                table-cell;
+                border-width:           2px;
+                border-style:           inset;
+                border-color:           rgb(38, 38, 38);
+                border-radius:          10px 10px 10px 10px;
+                background-color:       transparent;
+                width:                  710px;
+                height:                 75px;
+                color:                  black;
+                text-align:             center;
+                margin:                 3px auto;
+            }
+
+            #headerBottomRightDiv{
+                display:                table-cell;
+                border-width:           2px;
+                border-style:           inset;
+                border-color:           rgb(38, 38, 38);
+                border-radius:          10px 10px 10px 10px;
+                background-color:       transparent;
+                width:                  280px;
+                height:                 75px;
+                color:                  black;
+                text-align:             center;
+                margin:                 3px auto;
+            }
+
+    #bodyDiv{
+        border-width:           2px;
+        border-style:           inset;
+        border-color:           rgb(38, 38, 38);
+        border-radius:          10px 10px 10px 10px;
+        background-color:       transparent;
+        width:                  1200px;
+        height:                 560px;
+        color:                  black;
+        text-align:             center;
+        margin:                 0px auto;
+    }
+
+        #bodyLeftDiv{
+            display:                table-cell;
+            border-width:           2px;
+            border-style:           inset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            background-color:       transparent;
+            width:                  190px;
+            height:                 555px;
+            color:                  black;
+            text-align:             center;
+            margin:                 3px auto;
+        }
+
+        #bodyMiddleDiv{
+            display:                table-cell;
+            border-width:           2px;
+            border-style:           inset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            background-color:       transparent;
+            width:                  850px;
+            height:                 555px;
+            color:                  black;
+            text-align:             center;
+            margin:                 3px auto;
+        }
+
+            #bodyMiddleTopDiv{
+                border-width:           2px;
+                border-style:           inset;
+                border-color:           rgb(38, 38, 38);
+                border-radius:          10px 10px 10px 10px;
+                background-color:       transparent;
+                width:                  840px;
+                height:                 350px;
+                color:                  black;
+                text-align:             center;
+                margin:                 3px auto;
+            }
+
+            #bodyMiddleBottomDiv{
+                border-width:           2px;
+                border-style:           inset;
+                border-color:           rgb(38, 38, 38);
+                border-radius:          10px 10px 10px 10px;
+                background-color:       transparent;
+                width:                  840px;
+                height:                 180px;
+                color:                  black;
+                text-align:             center;
+                margin:                 3px auto;
+            }
+
+                #bodyMiddleBottomLeftDiv{
+                    display:                table-cell;
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  275px;
+                    height:                 175px;
+                    color:                  black;
+                    text-align:             center;
+                    margin:                 3px auto;
+                }
+
+                #bodyMiddleBottomMiddleDiv{
+                    display:                table-cell;
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  275px;
+                    height:                 175px;
+                    color:                  black;
+                    text-align:             center;
+                    margin:                 3px auto;
+                }
+
+                #bodyMiddleBottomRightDiv{
+                    display:                table-cell;
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  275px;
+                    height:                 175px;
+                    color:                  black;
+                    text-align:             center;
+                    margin:                 3px auto;
+                }
+
+        #bodyRightDiv{
+            display:                table-cell;
+            border-width:           2px;
+            border-style:           inset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            background-color:       transparent;
+            width:                  145px;
+            height:                 555px;
+            color:                  black;
+            text-align:             center;
+            margin-left:            3px;
+        }
