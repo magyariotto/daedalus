@@ -12,3 +12,13 @@ liquibase:
 
 session:
   expirationSeconds: 600
+  cleanup:
+    intervalMillis: 60000
+
+server:
+  port: 8080
+
+endpoint-protection:
+  protectedEndpoint:
+    - pathPattern: /home
+      method: GET
