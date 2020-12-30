@@ -35,8 +35,3 @@ function connect_JSON(){
         request.send();
         divs = JSON.parse(request.responseText);
 }
-
-function load(valami){
-
-    console.log(valami);
-}

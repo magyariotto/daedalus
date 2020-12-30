@@ -1,0 +1,71 @@
+{
+  "div1Divs": [
+    {
+      "name": "bodyMiddleDiv"
+    },
+    {
+      "name": "bodyMiddleTopDiv"
+    },
+    {
+      "name": "bodyMiddleTop1Div"
+    },
+    {
+      "name": "bodyMiddleTop2Div"
+    },
+    {
+      "name": "bodyMiddleTop3Div"
+    },
+    {
+      "name": "bodyMiddleBottomDiv"
+    },
+    {
+      "name": "bodyMiddleBottomLeftDiv"
+    },
+    {
+      "name": "bodyMiddleBottomMiddleDiv"
+    },
+    {
+      "name": "bodyMiddleBottomRightDiv"
+    }
+  ],
+  "divPlacement": [
+    {
+      "name": "bodyMiddleColumn",
+      "divNumber": 2,
+      "parent": "bodyMiddleDiv",
+      "child": [
+        {
+          "num": 2
+        },
+        {
+          "num": 3
+        }
+      ]
+    },
+    {
+      "name": "bodyMiddleBottomColumns",
+      "divNumber": 3,
+      "parent": "bodyMiddleBottomDiv",
+      "child": [
+        {
+          "num": 4
+        },
+        {
+          "num": 5
+        },
+        {
+          "num": 6
+        }
+      ]
+    }
+  ],
+  "selectedDiv": "div1",
+  "divParents": [
+    {
+      "name": "bodyMiddleBottomDiv"
+    },
+    {
+      "name": "bodyMiddleTopDiv"
+    }
+  ]
+}
