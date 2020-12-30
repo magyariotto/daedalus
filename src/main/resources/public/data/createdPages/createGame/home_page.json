@@ -79,6 +79,123 @@
       "name": "bodyMiddleBottomRightDiv",
       "id": "bodyMiddleBottomRightDiv",
       "num": 16
+    },
+    {
+      "name": "headerBottomMiddle1Div",
+      "id": "headerBottomMiddle1Div",
+      "num": 17
+    },
+    {
+      "name": "headerBottomMiddle2Div",
+      "id": "headerBottomMiddle2Div",
+      "num": 18
+    },
+    {
+      "name": "headerBottomMiddle3Div",
+      "id": "headerBottomMiddle3Div",
+      "num": 19
+    },
+    {
+      "name": "headerBottomMiddle4Div",
+      "id": "headerBottomMiddle4Div",
+      "num": 20
+    },
+    {
+      "name": "headerBottomMiddle5Div",
+      "id": "headerBottomMiddle5Div",
+      "num": 21
+    },
+    {
+      "name": "bodyMiddleTop1Div",
+      "id": "bodyMiddleTop1Div",
+      "num": 22
+    },
+    {
+      "name": "bodyMiddleTop2Div",
+      "id": "bodyMiddleTop2Div",
+      "num": 23
+    },
+    {
+      "name": "bodyMiddleTop3Div",
+      "id": "bodyMiddleTop3Div",
+      "num": 24
+    },
+    {
+      "name": "bodyLeftButton1Div",
+      "id": "bodyLeftButton1Div",
+      "num": 25,
+      "onclick": "load('div1')",
+      "innerHtml": "Attekintes"
+    },
+    {
+      "name": "bodyLeftButton2Div",
+      "id": "bodyLeftButton2Div",
+      "num": 26,
+      "onclick": "load('div2')",
+      "innerHtml": "Epuletek"
+    },
+    {
+      "name": "bodyLeftButton3Div",
+      "id": "bodyLeftButton3Div",
+      "num": 27,
+      "onclick": "load('div3')",
+      "innerHtml": "Eroforrasok"
+    },
+    {
+      "name": "bodyLeftButton4Div",
+      "id": "bodyLeftButton4Div",
+      "num": 28,
+      "onclick": "load('div4')",
+      "innerHtml": "Kutatas"
+    },
+    {
+      "name": "bodyLeftButton5Div",
+      "id": "bodyLeftButton5Div",
+      "num": 29,
+      "onclick": "load('div5')",
+      "innerHtml": "Hajogyar"
+    },
+    {
+      "name": "bodyLeftButton6Div",
+      "id": "bodyLeftButton6Div",
+      "num": 30,
+      "onclick": "load('div6')",
+      "innerHtml": "Eventek"
+    },
+    {
+      "name": "bodyLeftButton7Div",
+      "id": "bodyLeftButton7Div",
+      "num": 31,
+      "onclick": "load('div7')",
+      "innerHtml": "Galaxis"
+    },
+    {
+      "name": "bodyLeftButton8Div",
+      "id": "bodyLeftButton8Div",
+      "num": 32,
+      "onclick": "load('div8')",
+      "innerHtml": "Hadsereg"
+    },
+    {
+      "name": "bodyLeftButton9Div",
+      "id": "bodyLeftButton9Div",
+      "num": 33,
+      "onclick": "load('div9')",
+      "innerHtml": "Szovetseg"
+    },
+    {
+      "name": "bodyLeftButton10Div",
+      "id": "bodyLeftButton10Div",
+      "num": 34,
+      "onclick": "load('div10')",
+      "innerHtml": "Felugyelet"
+    },
+    {
+      "name": "bodyLeftButton11Div",
+      "id": "bodyLeftButton11Div",
+      "num": 35,
+      "onclick": "load('div11')",
+      "innerHtml": "Kereskedes"
     }
   ],
   "divsPlacement": [
@@ -171,6 +288,85 @@
         },
         {
           "num": 16
+        }
+      ]
+    },
+    {
+      "name": "headerBottomMiddleElements",
+      "divNumber": 5,
+      "parent": "headerBottomMiddleDiv",
+      "child": [
+        {
+          "num": 21
+        },
+        {
+          "num": 20
+        },
+        {
+          "num": 19
+        },
+        {
+          "num": 18
+        },
+        {
+          "num": 17
+        }
+      ]
+    },
+    {
+      "name": "bodyMiddleTopElements",
+      "divNumber": 3,
+      "parent": "bodyMiddleTopDiv",
+      "child": [
+        {
+          "num": 22
+        },
+        {
+          "num": 23
+        },
+        {
+          "num": 24
+        }
+      ]
+    },
+    {
+      "name": "bodyLeftDivElements",
+      "divNumber": 11,
+      "parent": "bodyLeftDiv",
+      "parentNum": 9,
+      "child": [
+        {
+          "num": 25
+        },
+        {
+          "num": 26
+        },
+        {
+          "num": 27
+        },
+        {
+          "num": 28
+        },
+        {
+          "num": 29
+        },
+        {
+          "num": 30
+        },
+        {
+          "num": 31
+        },
+        {
+          "num": 32
+        },
+        {
+          "num": 33
+        },
+        {
+          "num": 34
+        },
+        {
+          "num": 35
         }
       ]
     }

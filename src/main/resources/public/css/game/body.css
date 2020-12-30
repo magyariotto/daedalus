@@ -89,9 +89,34 @@
                 width:                  710px;
                 height:                 75px;
                 color:                  black;
-                text-align:             center;
+                text-align:             right;
                 margin:                 3px auto;
             }
+
+                #headerBottomMiddle1Div,
+                #headerBottomMiddle2Div,
+                #headerBottomMiddle3Div,
+                #headerBottomMiddle4Div,
+                #headerBottomMiddle5Div{
+                    display:                table-cell;
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  90px;
+                    height:                 65px;
+                    color:                  black;
+                    text-align:             right;
+                    float:                  right;
+                    margin-top:             3px;
+                    margin-bottom:          3px;
+                    margin-left:            1px;
+                    margin-right:           1px;
+                }
+                #headerBottomMiddle5Div{
+                    margin-right:           20px;
+                }
 
             #headerBottomRightDiv{
                 display:                table-cell;
@@ -128,10 +153,83 @@
             border-radius:          10px 10px 10px 10px;
             background-color:       transparent;
             width:                  190px;
-            height:                 555px;
+            height:                 500px;
             color:                  black;
             text-align:             center;
-            margin:                 3px auto;
+            vertical-align:         top;
+            margin-top:             1px;
+            margin-bottom:          1px;
+            margin-left:            1px;
+            margin-right:           1px;
+        }
+
+        #bodyLeftButton1Div,
+        #bodyLeftButton2Div,
+        #bodyLeftButton3Div,
+        #bodyLeftButton4Div,
+        #bodyLeftButton5Div,
+        #bodyLeftButton6Div,
+        #bodyLeftButton7Div,
+        #bodyLeftButton8Div,
+        #bodyLeftButton9Div,
+        #bodyLeftButton10Div,
+        #bodyLeftButton11Div{
+            border-width:           1px;
+            border-style:           inset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            background-color:       transparent;
+            width:                  180px;
+            height:                 25px;
+            color:                  black;
+            text-align:             center;
+            margin-top:             2px;
+            margin-bottom:          1px;
+            margin-left:            2px;
+            margin-right:           2px;
+            cursor:                 pointer;
+        }
+
+        #bodyLeftButton1Div:hover,
+        #bodyLeftButton2Div:hover,
+        #bodyLeftButton3Div:hover,
+        #bodyLeftButton4Div:hover,
+        #bodyLeftButton5Div:hover,
+        #bodyLeftButton6Div:hover,
+        #bodyLeftButton7Div:hover,
+        #bodyLeftButton8Div:hover,
+        #bodyLeftButton9Div:hover,
+        #bodyLeftButton10Div:hover,
+        #bodyLeftButton11Div:hover{
+            border-width:           1px;
+            border-style:           outset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            color:                  red;
+            background-color:       black;
+        }
+
+        #bodyLeftButton1Div:active,
+        #bodyLeftButton2Div:active,
+        #bodyLeftButton3Div:active,
+        #bodyLeftButton4Div:active,
+        #bodyLeftButton5Div:active,
+        #bodyLeftButton6Div:active,
+        #bodyLeftButton7Div:active,
+        #bodyLeftButton8Div:active,
+        #bodyLeftButton9Div:active,
+        #bodyLeftButton10Div:active,
+        #bodyLeftButton11Div:active{
+            border-width:           1px;
+            border-style:           outset;
+            border-color:           rgb(38, 38, 38);
+            border-radius:          10px 10px 10px 10px;
+            color:                  white;
+            background-color:       green;
+        }
+
+        #bodyLeftButton1Div{
+            margin-top:             5px;
         }
 
         #bodyMiddleDiv{
@@ -160,6 +258,54 @@
                 text-align:             center;
                 margin:                 3px auto;
             }
+
+                #bodyMiddleTop1Div{
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  630px;
+                    height:                 30px;
+                    color:                  black;
+                    text-align:             center;
+                    margin-top:             3px;
+                    margin-bottom:          1px;
+                    margin-left:            203px;
+                    margin-right:           3px;
+                }
+
+                #bodyMiddleTop2Div{
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  410px;
+                    height:                 150px;
+                    color:                  black;
+                    text-align:             center;
+                    margin-top:             115px;
+                    margin-bottom:          3px;
+                    margin-left:            423px;
+                    margin-right:           3px;
+                }
+
+                #bodyMiddleTop3Div{
+                    border-width:           2px;
+                    border-style:           inset;
+                    border-color:           rgb(38, 38, 38);
+                    border-radius:          10px 10px 10px 10px;
+                    background-color:       transparent;
+                    width:                  830px;
+                    height:                 30px;
+                    color:                  black;
+                    text-align:             center;
+                    margin-top:             5px;
+                    margin-bottom:          3px;
+                    margin-left:            3px;
+                    margin-right:           1px;
+                }
 
             #bodyMiddleBottomDiv{
                 border-width:           2px;

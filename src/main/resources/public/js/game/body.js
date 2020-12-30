@@ -14,6 +14,11 @@ function loadBodyPage(){
             let num3;
             for(num2=divs.divsPlacement.length-1; num2>0; num2--){
                 for(num3=0; num3<divs.divsPlacement[num2].divNumber; num3++){
+                    if(divs.divsPlacement[num2].name == "bodyLeftDivElements"){
+                        div[divs.homePageDivs[divs.divsPlacement[num2].child[num3].num-1].name].setAttribute("onclick",
+                        divs.homePageDivs[divs.divsPlacement[num2].child[num3].num-1].onclick);
+                        div[divs.homePageDivs[divs.divsPlacement[num2].child[num3].num-1].name].innerHTML = divs.homePageDivs[divs.divsPlacement[num2].child[num3].num-1].innerHtml;
+                    }
                     div[divs.divsPlacement[num2].parent].appendChild(div[divs.homePageDivs[divs.divsPlacement[num2].child[num3].num-1].name]);
                 }
             }
@@ -29,4 +34,9 @@ function connect_JSON(){
         request.setRequestHeader("Request-Type", "rest");
         request.send();
         divs = JSON.parse(request.responseText);
+}
+
+function load(valami){
+
+    console.log(valami);
 }
