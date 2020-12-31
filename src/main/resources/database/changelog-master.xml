@@ -37,4 +37,39 @@
         </createTable>
         <addPrimaryKey tableName="login_session" columnNames="session_id" schemaName="public"/>
     </changeSet>
+
+    <changeSet id="create_table_planets" author="magyaritotto">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="planets" schemaName="public"/>
+            </not>
+        </preConditions>
+        <createTable tableName="planets" schemaName="public">
+            <column name="planet_id" type="UUID"/>
+            <column name="user_id" type="UUID"/>
+            <column name="coordinate" type="text"/>
+            <column name="full_size" type="integer"/>
+            <column name="exists_size" type="integer"/>
+        </createTable>
+        <addPrimaryKey tableName="planets" columnNames="planet_id" schemaName="public"/>
+    </changeSet>
+
+    <changeSet id="create_table_buildings" author="magyariotto">
+        <preConditions>
+            <not>
+                <tableExists tableName="buildings" schemaName="public"/>
+            </not>
+        </preConditions>
+        <createTable tableName="buildings" schemaName="public">
+            <column name="planet_id" type="UUID"/>
+            <column name="user_id" type="UUID"/>
+            <column name="robot_factory_level" type="integer"/>
+            <column name="research_laboratory_level" type="integer"/>
+            <column name="covenant_level" type="integer"/>
+            <column name="rocket_silo" type="integer"/>
+            <column name="nano_technology_level" type="integer"/>
+            <column name="space_dock_level" type="integer"/>
+        </createTable>
+        <addPrimaryKey tableName="buildings" columnNames="planet_id" schemaName="public"/>
+    </changeSet>
 </databaseChangeLog>
